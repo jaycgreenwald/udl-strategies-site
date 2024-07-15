@@ -1,0 +1,62 @@
+body,
+html {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 25px 35px;
+}
+
+.header-title {
+  color: #2ea6a6;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 600px;
+}
+
+.header-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+}
+
+.accom-cards-wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 25px 35px;
+}
+
+.accom-card {
+  border: 2px solid #111111;
+  border-radius: 3px;
+  max-width: 250px;
+}
+
+.accom-card-title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.accom-card-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 0 16px;
+}
+
+.footer-copywrite {
+  color: #111111;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: .75rem;
+  /* font-weight: 500; */
+}
