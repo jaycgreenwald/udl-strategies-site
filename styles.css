@@ -36,10 +36,17 @@ body {
   padding: 25px 35px;
 }
 
+.accom-cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
 .accom-card {
   border: 2px solid #111111;
   border-radius: 3px;
-  max-width: 250px;
+  max-width: 400px;
 }
 
 .accom-card-title {
@@ -53,10 +60,26 @@ body {
   padding: 0 16px;
 }
 
+.btn {
+  margin-top: 20px;
+  padding: 10px 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  background-color: #f2b705;
+  border-radius: 3px;
+  border: 1px solid #111111;
+  transition: background-color .2s ease-out;
+}
+
+.btn:hover {
+  background-color: #f25244;
+}
+
 .footer-copywrite {
-  color: #111111;
+  color: #888888;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: .75rem;
-  /* font-weight: 500; */
+  font-weight: 500;
 }
