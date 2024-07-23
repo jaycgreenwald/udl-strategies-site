@@ -6,23 +6,32 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  background-color: #def6e5;
+  color: #263238;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
+  font-weight: 400;
 }
 
-.header-wrapper {
+.header {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 400px;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 25px 35px;
+  max-width: 1000px;
+}
+
+.header-text-wrapper {
+  position: relative;
 }
 
 .header-title {
-  color: #2ea6a6;
+  color: #263238;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.1;
-  max-width: 600px;
+  letter-spacing: -1.5px;
+  max-width: 500px;
 }
 
 .header-text {
@@ -30,9 +39,26 @@ body {
   font-size: 1.25rem;
 }
 
-.accom-cards-wrapper {
+.header-image-wrapper {
   margin: 0 auto;
-  max-width: 800px;
+  text-align: center;
+}
+
+.header-image {
+  max-width: 400px;
+}
+
+.header-image-attribution {
+  color: #263238;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: .75rem;
+}
+
+.accom-cards-wrapper {
+  margin: 50px auto;
+  max-width: 1000px;
   padding: 25px 35px;
 }
 
@@ -44,31 +70,31 @@ body {
 }
 
 .accom-card {
-  border: 2px solid #111111;
-  border-radius: 3px;
-  max-width: 400px;
+  background-color: #fff;
+  border: 1px solid #111111;
+  border-radius: 4px;
+  padding: 10px 16px;
 }
 
 .accom-card-title {
-  font-weight: 700;
-  text-align: center;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin: 0;
 }
 
 .accom-card-text {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  padding: 0 16px;
 }
 
 .btn {
+  background-color: #f2b705;
+  border: 1px solid #111111;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
   margin-top: 20px;
   padding: 10px 14px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.125rem;
-  background-color: #f2b705;
-  border-radius: 3px;
-  border: 1px solid #111111;
   transition: background-color .2s ease-out;
 }
 
