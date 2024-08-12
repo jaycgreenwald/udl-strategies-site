@@ -29,68 +29,29 @@
   </header>
 
   <!-- accom is short for accommodations -->
-  <section>
-    <div class="accom-cards-wrapper">
-      <div class="accom-cards-list">
-        <div class="accom-card"><!--card start-->
-          <h2 class="accom-card-title">
-            Accommodation Name
-          </h2>
-          <p class="accom-card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-        </div><!--card end-->
-        <div class="accom-card"><!--card start-->
-          <h2 class="accom-card-title">
-            Accomodation Name
-          </h2>
-          <p class="accom-card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-        </div><!--card end-->
-        <div class="accom-card"><!--card start-->
-          <h2 class="accom-card-title">
-            Accomodation Name
-          </h2>
-          <p class="accom-card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-        </div><!--card end-->
-        <div class="accom-card"><!--card start-->
-          <h2 class="accom-card-title">
-            Accomodation Name
-          </h2>
-          <p class="accom-card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-        </div><!--card end-->
-        <div class="accom-card"><!--card start-->
-          <h2 class="accom-card-title">
-            Accomodation Name
-          </h2>
-          <p class="accom-card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-        </div><!--card end-->
-        <div class="accom-card"><!--card start-->
-          <h2 class="accom-card-title">
-            Accomodation Name
-          </h2>
-          <p class="accom-card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-        </div><!--card end-->
-      </div>
-      <button class="btn">Get UDL Strategies</button>
-    </div>
 
-  </section>
+  <section> <!-- this section contains the dynamically generated accommodation cards -->
+
+    <div class="accom-cards-wrapper"> <!-- outside wrapper for centering -->
+
+      <div class="accom-cards-list">
+
+      </div> <!-- end of accom-cards-list -->
+
+      <template id="accom-card-template">
+        <div class="accom-card">
+          <input class="accom-card-checkbox" type="checkbox" value="" name="" id="">
+          <label class="accom-card-title" for="">sffdfds</label>
+          <p class="accom-card-text">dfgsdfgsf</p>
+        </div>
+      </template>
+      <form>
+        <button class="btn" id="subButton">
+          Get UDL Strategies
+        </button>
+      </form>
+
+  </section> <!-- accommodation section end -->
   <footer>
     <div class="footer-wrapper">
       <p class="footer-copywrite">
@@ -98,6 +59,9 @@
       </p>
     </div>
   </footer>
+
+  <script src="main.js"></script>
+
 </body>
 
 </html>
