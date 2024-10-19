@@ -10,7 +10,6 @@ async function loadAccommodations() {
 
     clone.querySelector(".accom-card-title").textContent = accommodation.name
     clone.querySelector(".accom-card-title").setAttribute("for", ("accom" + accommodation.value))
-    clone.querySelector(".accom-card-text").textContent = accommodation.description
     clone.querySelector(".accom-card-checkbox").setAttribute("value", accommodation.value)
     clone.querySelector(".accom-card-checkbox").setAttribute("id", ("accom" + accommodation.value))
     wrapper.appendChild(clone)
@@ -24,5 +23,21 @@ loadAccommodations()
 document.getElementById("subButton").addEventListener("click", getStrategies)
 
 function getStrategies() {
+
+  // const checkboxes = document.getElementsByClassName("accom-card-checkbox")
+  const checkboxes = document.getElementsByClassName("accom-card-checkbox")
+  const titles = document.getElementsByClassName("accom-card-title")
+  const descriptions = document.getElementsByClassName("accom-card-text")
+
+  console.log(titles.length)
+  for (var i = 0; i < checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+      console.log(titles[i])
+      console.log(descriptions[i])
+    }
+  }
+
+  // console.log(checkboxes.length)
+
   window.open("https://jaycgreenwald.github.io/udl-strategies-site/output.html", "_blank")
 }

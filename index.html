@@ -14,23 +14,26 @@
 
 <body>
   <header class="header">
-    <div class="header-text-wrapper">
-      <h1 class="header-title">
-        Accommodation-to-UDL Strategy Tool
-      </h1>
-      <p class="header-text">Click on one or more accommodations to select them. Then click the "Get Strategies" button
-        to display the recommended UDL strategies.
-      </p>
-    </div>
-    <div class="header-image-wrapper">
-      <img class="header-image" src="images/Raising hand-bro.png" alt="">
-      <a class="header-image-attribution" href="https://storyset.com/people">People illustrations by Storyset</a>
+    <div class="header-content">
+      <div class="header-text-wrapper">
+        <h1 class="header-title">
+          Accommodation-to-UDL Strategy Tool
+        </h1>
+        <p class="header-text">Click on one or more accommodations to select them. Then click the "Get Strategies"
+          button
+          to display the recommended UDL strategies.
+        </p>
+      </div>
+      <div class="header-image-wrapper">
+        <img class="header-image" src="images/Raising hand-bro.png" alt="">
+        <a class="header-image-attribution" href="https://storyset.com/people">People illustrations by Storyset</a>
+      </div>
     </div>
   </header>
 
   <!-- accom is short for accommodations -->
 
-  <section> <!-- this section contains the dynamically generated accommodation cards -->
+  <section class="accom"> <!-- this section contains the dynamically generated accommodation cards -->
 
     <div class="accom-cards-wrapper"> <!-- outside wrapper for centering -->
 
@@ -41,8 +44,9 @@
       <template id="accom-card-template">
         <div class="accom-card">
           <input class="accom-card-checkbox" type="checkbox" value="" name="" id="">
-          <label class="accom-card-title" for="">sffdfds</label>
-          <p class="accom-card-text">dfgsdfgsf</p>
+          <label class="accom-card-title" for="">
+
+          </label>
         </div>
       </template>
       <form>
@@ -52,14 +56,13 @@
       </form>
 
   </section> <!-- accommodation section end -->
-  <footer>
+  <footer class="footer">
     <div class="footer-wrapper">
       <p class="footer-copywrite">
         &copy; 2024 Copywrite Info Here
       </p>
     </div>
   </footer>
-
   <script src="main.js"></script>
 
 </body>

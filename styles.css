@@ -6,15 +6,19 @@ html {
 }
 
 body {
-  background-color: #def6e5;
   color: #263238;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
+  border: 1px solid red;
 }
 
 .header {
   background-color: #def6e5;
+}
+
+.header-content {
+  /* border: 1px solid green; */
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 400px;
@@ -57,10 +61,15 @@ body {
   font-size: .75rem;
 }
 
+.accom {
+  background-color: #def6e5;
+}
+
 .accom-cards-wrapper {
-  margin: 50px auto;
+  /* border: 1px solid blue; */
+  margin: 0 auto;
   max-width: 1000px;
-  padding: 25px 35px;
+  padding: 50px 0;
 }
 
 .accom-cards-list {
@@ -111,6 +120,12 @@ input[type=checkbox] {
   background-color: #f25244;
 }
 
+.footer {
+  background-color: #def6e5;
+  padding: 20px 0;
+  /* border: 1px solid orange; */
+}
+
 .footer-copywrite {
   color: #888888;
   text-align: center;
@@ -121,17 +136,20 @@ input[type=checkbox] {
 
 
 /* output */
-.accom-output {
+.udl {
   max-width: 900px;
   margin: 0 auto;
+  border: 1px solid blue;
 }
 
-.accom-output-wrapper {
+.udl-output-wrapper {
   margin: 50px auto;
   max-width: 1000px;
+  border: 1px solid green;
 }
 
-.accom-group {
+.udl-group {
+  border: 1px solid red;
   background: #fff;
   border: 3px solid rgb(21, 156, 219);
   border-radius: 8px;
@@ -142,7 +160,8 @@ input[type=checkbox] {
   padding-bottom: 10px;
 }
 
-.accom-group-title {
+.udl-accom-title {
+  border: 1px solid red;
   background: #fff;
   position: absolute;
   top: -42px;
@@ -150,7 +169,12 @@ input[type=checkbox] {
   padding: 0 7px;
 }
 
-.accom-group-udl {
+.udl-list {
+
+}
+
+.udl-strategy {
+  border: 1px solid red;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   margin-bottom: 14px;
